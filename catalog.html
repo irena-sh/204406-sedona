@@ -1,36 +1,32 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
       <title>Седона - список отелей</title>
   </head>
-    <body>
-      <div class="page-header">
-        <div class="header-top">
-          <ul class="main-nav">
-            <li>
-            <a href="#">Информация</a>
-            </li>
-            <li>
-            <a href="#">Фото и видео</a>
-            </li>
-            <li class="logo">
-            <a href="index.html">Логотип</a>
-            </li>
-            <li>
-            <a href="#">Карта штата</a>
-            </li>
-            <li>
-            <a href="#">Гостиницы</a></li>
-          </ul>
-        </div>
-      </div>
+  <body>
+    <div class="page-header">
+      <div class="logo"><img src="logo.jpg" alt="Логотип"></div>
+      <ul class="main-nav">
+        <li>
+          <a href="#">Информация</a>
+        </li>
+        <li>
+          <a href="#">Фото и видео</a>
+        </li>
+        <li>
+          <a href="#">Карта штата</a>
+        </li>
+        <li>
+          <a href="#">Гостиницы</a></li>
+      </ul>
+    </div>
 
       <main class="main">
         <div class="filters clearfix">
-          <form action="/echo" method="GET">
+          <form action="https://echo.htmlacademy.ru/" method="GET">
             <div class="filters-column">
-              <p class="filters-title">Инфраструктура:</p>
+              <h2 class="filters-title">Инфраструктура:</h2>
               <div class="filter-checkbox"><input type="checkbox" name="infrastructure1" value="i1" id="ch1" checked="">
               <label for="ch1">Бассейн</label></div>
               <div class="filter-checkbox"><input type="checkbox" name="infrastructure2" value="i2" id="ch2">
@@ -39,7 +35,7 @@
               <label for="ch3">Wi-Fi</label></div>
             </div>
             <div class="filters-column">
-              <p class="filters-title">Тип жилья:</p>
+              <h2 class="filters-title">Тип жилья:</h2>
                 <div class="filter-checkbox"><input type="checkbox" name="hotel1" value="h1" id="ch4" checked="">
                 <label for="ch4">Гостиница</label></div>
                 <div class="filter-checkbox"><input type="checkbox" name="hotel2" value="h2" id="ch5" checked="">
@@ -48,18 +44,17 @@
                 <label for="ch6">Апартаменты</label></div>
             </div>
             <div class="filters-price">
-              <p class="filters-title">Стоимость в сутки (Р):</p>
-                <div class="price-frame">
-                <div class="price-frame-input">от <input class="min-price" type="text" value="0"></div>
-                <div class="price-frame-input-line"></div>
-                <div class="price-frame-input">до <input class="max-price" type="text" value="3000"></div>
-                </div>
-                <div class="range-controls">
-                  <div class="scale"><div class="bar"></div></div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
-                </div>
-                <a href="#" class="btn-transparent">Показать</a>
+              <h2 class="filters-title">Стоимость в сутки (Р):</h2>
+              <div class="price-frame">
+                <label class="price-frame-input">от <input class="min-price" type="text" placeholder="0" value=""></label>
+                <label class="price-frame-input">до <input class="max-price" type="text" placeholder="3000" value=""></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale"><div class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <button type="submit">Показать</button>
             </div>
           </form>
         </div>
@@ -94,16 +89,18 @@
                 <div class="item-wrapper">
                   <div class="itempic-wrapper"><img src="img/hotel-img1.jpg" alt="Amara Resort & Spa"></div>
                     <div class="item-description">
-                     <a href="#" class="item-title">Amara Resort & Spa</a>
+                      <h2>
+                        <a href="#" class="item-title">Amara Resort & Spa</a>
+                      </h2>
                       <div class="item-text">
-                        <p>Гостиница</p>
-                        <p>от 4000 р.</p>
+                        <span>Гостиница</span>
+                        <span>от 4000 р.</span>
                       </div>
-                      <p class="item-btns">
+                      <div class="item-buttons">
                         <a href="#" class="item-btn details">Подробнее</a>
                         <a href="#" class="item-btn book">Забронировать</a>
-                      </p>
                     </div>
+                  </div>
                 </div>
                 <div class="item-rating">
                   <div class="rating-stars">
@@ -136,6 +133,7 @@
                   <div class="rating-stars">
                     <span></span>
                     <span></span>
+                    <span></span>
                   </div>
                   <p class="rating-text">Рейтинг: 8,9</p>
                 </div>
@@ -162,7 +160,6 @@
                 <div class="rating-stars">
                   <span></span>
                   <span></span>
-                  <span></span>
                 </div>
                 <p class="rating-text">Рейтинг: 9,2</p>
               </div>
@@ -171,19 +168,19 @@
         </section>
       </main>
 
-      <footer class="index">
+      <footer class="footer">
         <div class="instagram">
-          <a href="#" class="hashtag">#Visitsedona</a>
+          <span class="hashtag">#Visitsedona</span>
         </div>
         <div class="social">
           <a class="social-btn social-btn-tw" href="#">Twitter</a> 
           <a class="social-btn social-btn-fb" href="#">Facebook</a>
           <a class="social-btn social-btn-youtube" href="#">Youtube</a>
         </div>
-        <div class="copyright">
-          <p>Website by</p>
+        <address class="copyright">
+          <span>Website by</span>
             <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>      
-        </div>
+        </address>
       </footer>
-     </body>
-</html>
+    </body>
+  </html>
