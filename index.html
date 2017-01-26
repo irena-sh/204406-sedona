@@ -2,46 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Седона</title>
+     <title>Седона</title>
   </head>
   <body>
     <div class="page-header">
-      <div class="header-top">
-        <ul class="main-nav">
-          <li>
+      <div class="logo"><img src="logo.jpg" alt="Логотип"></div>
+      <ul class="main-nav">
+        <li>
           <a href="#">Информация</a>
-          </li>
-          <li>
+        </li>
+        <li>
           <a href="#">Фото и видео</a>
-          </li>
-          <li class="logo">
-          <a href="index.html">Логотип</a>
-          </li>
-          <li>
+        </li>
+        <li>
           <a href="#">Карта штата</a>
-          </li>
-          <li>
+        </li>
+        <li>
           <a href="#">Гостиницы</a>
-          </li>
-        </ul>
-      </div>
+        </li>
+      </ul>
     </div>
 
     <main class="index-content">
       <section>
         <div class="top-background-image">
           <img class="top-image" src="img/greeting-text.png" width="458" height="352" alt="Добро пожаловать в Седону">
-            </div>
-      </section>
-      <section class="features-promo">
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        </div>
+        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
       <section class="features-blue">
         <div class="text-content one-third">
           <h2>Настоящий городок</h2>
-            <p>— №1 —</p>
+            <span>№1</span>
             <p> Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="view-image">
@@ -53,8 +47,8 @@
           <div class="house">
             <img src="img/house-icon.png" width="75" height="72" alt="Дом">
           </div>
-            <h2>Жилье</h2>
-              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <h2>Жилье</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="text-content one-third">
           <div class="food">
@@ -77,24 +71,24 @@
           </div>
           <div class="text-content one-third">
             <h2>Там есть мост Дьявола</h2>
-              <span>— №2 —</span>
-              <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            <span>№2</span>
+            <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
           </div>
           </section>
           <section class="features-grey">
             <div class="text-content one-third">
               <h2>Небольшая площадь</h2>
-                <span>— №3 —</span>
+                <span>№3</span>
                 <p>Все достопримечательности находятся очень близко</p>
             </div>
             <div class="text-content one-third">
               <h2>Красивая дорога</h2>
-                <span>— №4 —</span>
+                <span>№4</span>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
             <div class="text-content one-third">
               <h2>Мало туристов</h2>
-                <span>— №5 —</span>
+                <span>№5</span>
                 <p>Большинство едет в Гранд каньон и толпится там</p>
             </div>
             </section>
@@ -109,12 +103,12 @@
                   <div class="form-line clearfix">
                     <label for="day-in">Дата заезда:</label>
                     <input class="date field" type="text" id="day-in" name="in" placeholder="24 апреля 2017" required>
-                  <div class="icon-calendar"></div>
+                    <div class="icon-calendar"></div>
                   </div>
                   <div class="form-line clearfix">
                     <label for="day-out">Дата выезда:</label>
                     <input class="date field" type="text" id="day-out" name="out" placeholder="4 июля 2017">
-                  <div class="icon-calendar"></div>
+                    <div class="icon-calendar"></div>
                   </div>
                   <div class="form-line clearfix">
                     <div class="half-width">
@@ -142,7 +136,7 @@
                         </div>
                     </div>
                     </div>
-                    <button class="find-btn" type="button"><span>Найти</span></button>
+                    <button class="find-btn" type="submit">Найти</button>
                 </form>
               </div>
           </section>
@@ -150,17 +144,17 @@
 
     <footer class="index">
       <div class="instagram">
-        <a href="#" class="hashtag" target="blank">#Visitsedona</a>
+        <span class="hashtag">#Visitsedona</span>
       </div>
       <div class="social">
         <a class="social-btn social-btn-tw" href="#">Twitter</a> 
         <a class="social-btn social-btn-fb" href="#">Facebook</a>
         <a class="social-btn social-btn-youtube" href="#">Youtube</a>
       </div>
-      <div class="copyright">
-        <p>Website by</p>
+      <address class="copyright">
+        <span>Website by</span>
           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>      
-      </div>
+      </address>
     </footer>
   </body>
 </html>
