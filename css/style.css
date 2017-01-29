@@ -1,6 +1,6 @@
 body {
   font-size: 14px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   font-weight: regular;
   line-height: 21px;
   color: #333333;
@@ -27,14 +27,12 @@ h2 {
   color: #000000;
 }
 
-.text-content one-third h2, span{
-  font-size: 21px;
-  line-height: 21px;
+.features-blue {
   color: #ffffff;
 }
 
-.text-content one-third p {
-  font-size: 14px;
+.features-blue h2 {
+  font-size: 21px;
   line-height: 21px;
   color: #ffffff;
 }
@@ -58,8 +56,8 @@ h2 {
 }
 
 .sorting-title {
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 26px;
   color: #000000;
 }
 
