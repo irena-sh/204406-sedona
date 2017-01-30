@@ -1,7 +1,7 @@
 body {
   font-size: 14px;
   font-family: 'PT Sans', Arial, sans-serif;
-  font-weight: regular;
+  font-weight: normal;
   line-height: 21px;
   color: #333333;
 }
@@ -16,7 +16,6 @@ h1 {
 h2 {
   font-size: 21px;
   font-weight: bold;
-  line-height: 21px;
   color: #000000;
 }
 
@@ -33,7 +32,6 @@ h2 {
 
 .features-blue h2 {
   font-size: 21px;
-  line-height: 21px;
   color: #ffffff;
 }
 
@@ -44,7 +42,6 @@ h2 {
 
 .filters-title {
   font-size: 16px;
-  line-height: 21px;
   color: #ffffff;
 }
 
