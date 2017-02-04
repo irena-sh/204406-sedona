@@ -3,9 +3,11 @@ body {
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: normal;
   line-height: 21px;
+  text-transform: uppercase;
   color: #333333;
 }
 
+  
 h1 {
   font-size: 21px;
   font-weight: bold;
@@ -41,6 +43,10 @@ h2 {
 }
 
 .filters-title {
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 29px;
+  padding: 0;
   font-size: 16px;
   color: #ffffff;
 }
@@ -62,4 +68,232 @@ h2 .item-title {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
+
+/* header */ 
+.header {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background-color: white;
+  /* Только для оформления сетки */
+  min-height: 56px;
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  padding-top: 17px;
+  padding-right: 6%;
+  padding-bottom: 19px;
+  padding-left: 6%;
+}
+
+.main-nav li {
+  display: inline-block;
+  width: 20%; 
+}
+
+.main-nav a {
+  display: block;
+  text-decoration: none;
+}
+
+.main-nav li:nth-child(2) {
+  margin-right: 20%;
+}
+
+.main-nav li:nth-child(3), .main-nav li:nth-child(4) {
+  text-align: right;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  z-index: 20;
+  margin-right: auto;
+  margin-left: auto;
+  margin-left: -69px;
+}
+
+/* Главная станица */
+.top-background-image {
+  position: relative;
+  height: 431px;
+  padding-top: 77px;
+}
+
+.top-background-image img {
+  display: block;
+  width: 458px;
+  height: 352px;
+  margin: 0 auto;
+}
+
+.slogan, .features-blue, .features-white, .features-grey {
+  text-align: center;
+}
+
+.text-content h2, .text-content p, .view-image{
+  margin: 0;
+  padding: 0;
+}
+
+.features-white {
+  min-height: 330px;
+  font-size: 0;
+}
+
+.features-blue, .text-content {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.text-content {
+  box-sizing: border-box;
+  width: 33.333333%;
+  padding-right: 5.5%;
+  padding-left: 5.5%;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.features-white h2 {
+  width: 166px;
+  margin: 0 auto;
+  padding-bottom: 22px; 
+}
+
+.view-image {
+  width: 66.666666%;
+  overflow: hidden;
+}
+
+.features-blue {
+  min-height: 256px;
+  max-height: 256px;
+  overflow: hidden;
+  color: white;
+}
+
+.features-blue h2 {
+  padding-top: 53px;
+}
+
+.features-grey {
+  min-height: 256px;
+  font-size: 0;
+}
+
+.features-grey h2 {
+  padding-top: 46px;
+}
+
+.one-third {
+  position: relative;
+  padding-top: 160px;
+}
+
+.one-third:before {
+  content: "";
+  position: absolute;
+  top: 56px;
+  left: 50%;
+  display: block;
+  margin-left: -38px;
+}
+
+.house:before {
+  width: 76px;
+  height: 76px;
+}
+
+.food:before {
+  width: 76px;
+  height: 76px;
+}
+
+.gift:before {
+  width: 76px;
+  height: 76px;
+}
+
+.interested-container {
+  width: 568px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.interested-container h2 {
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
+.search-form-container a {
+  display: block;
+  width: 568px;
+  margin-top: 47px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  background-color: #766357;
+  text-align: center;
+}
+
+.search-form {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: none;
+  width: 458px;
+  padding: 55px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+  color: black;
+  background: white;
+  box-shadow: 0 2px 5px 0 #d4d2d2;
+} 
+
+/* Футер */
+.index {
+  padding: 36px 0;
+  display: inline-block;
+  font-size: 0;
+  background: rgba(254, 254, 254, 0.9);
+}
+
+.hashtag {
+  width: 33.3333333%;
+  font-size: 21px;
+  vertical-align: middle;
+}
+
+.social {
+  width: 33.3333333%;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+}
+
+.social .social-btn {
+  display: inline-block;
+  width: 42px;
+  height: 18px;
+  margin-right: 6px;
+  padding: 15px 2px;
+  vertical-align: middle;
+  font-size: 21px;
+}
+
+.copyright {
+  display: inline-block;
+  width: 33.3333333%;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
 }
