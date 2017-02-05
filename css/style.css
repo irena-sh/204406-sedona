@@ -29,12 +29,12 @@ h2 {
 }
 
 .features-blue {
-  color: #ffffff;
+  color: #000000;
 }
 
 .features-blue h2 {
   font-size: 21px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .interested-container h2 {
@@ -48,7 +48,7 @@ h2 {
   margin-bottom: 29px;
   padding: 0;
   font-size: 16px;
-  color: #ffffff;
+  color: #000000;
 }
 
 .results-title {
@@ -72,12 +72,13 @@ h2 .item-title {
 
 /* header */ 
 .header {
-  margin: 0;
-  padding: 0;
   font-size: 0;
   background-color: white;
   /* Только для оформления сетки */
   min-height: 56px;
+  max-width: 1200px;
+  margin-left: auto; 
+  margin-right: auto;
 }
 
 .main-nav {
@@ -95,7 +96,6 @@ h2 .item-title {
 }
 
 .main-nav a {
-  display: block;
   text-decoration: none;
 }
 
@@ -134,7 +134,7 @@ h2 .item-title {
   text-align: center;
 }
 
-.text-content h2, .text-content p, .view-image{
+.text-content h2, .text-content p {
   margin: 0;
   padding: 0;
 }
@@ -144,9 +144,21 @@ h2 .item-title {
   font-size: 0;
 }
 
+.features-blue p {
+  color: black;
+}
+
+.number {
+  color: black;
+}
+
 .features-blue, .text-content {
   display: inline-block;
   vertical-align: top;
+}
+
+.features-blue .text-content {
+  padding-top: 53px;
 }
 
 .text-content {
@@ -167,6 +179,7 @@ h2 .item-title {
 .view-image {
   width: 66.666666%;
   overflow: hidden;
+  display: inline-block;
 }
 
 .features-blue {
@@ -174,11 +187,14 @@ h2 .item-title {
   max-height: 256px;
   overflow: hidden;
   color: white;
+  font-size: 0;
 }
 
 .features-blue h2 {
-  padding-top: 53px;
+  
 }
+
+
 
 .features-grey {
   min-height: 256px;
@@ -262,7 +278,7 @@ h2 .item-title {
 /* Футер */
 .index {
   padding: 36px 0;
-  display: inline-block;
+  max-width: 1200px;
   font-size: 0;
   background: rgba(254, 254, 254, 0.9);
 }
@@ -271,6 +287,8 @@ h2 .item-title {
   width: 33.3333333%;
   font-size: 21px;
   vertical-align: middle;
+  display: inline-block;
+  
 }
 
 .social {
@@ -296,4 +314,238 @@ h2 .item-title {
   font-size: 14px;
   vertical-align: middle;
   text-align: center;
+}
+
+/* Страница отелей */
+
+.filters {
+  padding-bottom: 30px;
+  padding-top: 26px;
+  padding-right: 6%;
+  padding-left: 6%;
+  color: white;
+  background: blue;
+}
+
+.filters-column {
+  float: left;
+  box-sizing: border-box;
+  width: 186px;
+  margin-right: 2%;
+}
+
+.filters-price {
+  float: right;
+  width: 30.8%;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.filters-column h2, .filters-price h2 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filter-checkbox {
+  margin-top: 12px;
+}
+
+.price-frame {
+  box-sizing: border-box;
+  width: 98%;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.results-wrapper, .item {
+  padding: 29px 6%;
+}
+
+.results-title, .sorting-title, .sorting-list, .itempic-wrapper {
+  float: left;
+  margin-right: 32px;
+}
+
+.item-description {
+  float: left;
+  max-width: 264px;
+}
+
+.sorting-controls, .item-rating {
+  float: right;
+}
+
+.item-text, .item-buttons {
+  float: left;
+  min-width: 110px;
+  max-width: 142px;
+  margin-top: 8px;
+  margin-right: 6px;
+}
+
+.results-title {
+  width: 135px;
+}
+
+.sorting-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 8px;
+  list-style: none;
+}
+
+.sorting-list li {
+  display: inline-block;
+  margin-right: 32px;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.sorting-list li:first-child {
+  margin-right: 40px;
+}
+
+.sorting-list a {
+  padding-right: 2px;
+  padding-left: 2px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-controls {
+  position: relative;
+  top: 3px;
+  margin-right: -8px;
+  font-size: 0;
+  text-align: right;
+}
+
+.item {
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.items:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.itempic-wrapper,
+.item-wrapper,
+.item-description {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+
+.item-wrapper {
+  width: 85%;
+}
+
+.item-description {
+  max-width: 70%;
+}
+
+.itempic-wrapper {
+  margin-right: 27px;
+  overflow: hidden;
+  width: 135px;
+  height: 90px;
+  float: left;
+}
+
+.itempic-wrapper img {
+  width: 100%;
+}
+
+.item-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.item-text {
+  margin: 6px 0 17px;
+  max-width: 265px;
+  font-size: 0;
+  color: #333333;
+}
+
+.item-text p {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.item-text p:first-child{
+  width: 44%;
+}
+
+.item-text p:last-child {
+  width: 56%;
+  vertical-align: top;
+}
+
+.item-buttons, .rating-stars {
+  font-size: 0;
+}
+
+.item-buttons:last-child {
+  margin-right: 0;
+}
+
+.item-btn {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  height: 27px;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 6px;
+  box-sizing: border-box;
+  padding-top: 7px;
+}
+
+.details {
+  width: 110px;
+  background-color: #81b3d2;
+}
+
+.book {
+  width: 142px;
+  background-color: #766357;
+}
+
+.item-rating {
+  display: inline-block;
+  text-align: right;
+  position: relative;
+  width: 15%;
+}
+
+.rating-text {
+  margin-top: 47px;
+  width: 110px;
+  height: 26px;
+  box-sizing: border-box
+  padding-top: 6px;
+  background-color: #f2f2f2;
+  color: #666666;
+  text-align: center;
+  position: absolute;
+  right: 0px;
+}
+
+.rating-stars>span {
+  font-size: 0;
+  display: inline-block;
+  width: 19px;
+  height: 17px;
+  margin-left: 4.5px;
 }
