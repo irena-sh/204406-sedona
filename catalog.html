@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <title>Седона - список отелей</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    <div class="wrapper">
     <header class="header">
       <div class="page-header">
         <div class="logo"><a href="index.html"><img src="logo.jpg" width="138" height="70" alt="Логотип"></a></div>
@@ -25,8 +27,7 @@
         </ul>
       </div>
     </header>
-
-    <main class="main">
+    
       <div class="filters clearfix">
         <form action="https://echo.htmlacademy.ru/" method="GET">
           <div class="filters-column">
@@ -51,6 +52,7 @@
             <h2 class="filters-title">Стоимость в сутки (Р):</h2>
             <div class="price-frame">
               <label class="price-frame-input">от <input class="min-price" type="text" placeholder="0" value=""></label>
+              <div class="price-frame-input-line"></div>
               <label class="price-frame-input">до <input class="max-price" type="text" placeholder="3000" value=""></label>
             </div>
             <div class="range-controls">
@@ -64,12 +66,11 @@
       </div>
       
       <section class="results">
-        <div class="results-wrapper">
-          <div class="sorting">
-            <div class="sorting-text">
-              <p class="results-title">Найдено: <span class="quantity">3</span></p>
-              <p class="sorting-title">Сортировка:</p>
-              <ul class="sorting-list">
+          <div class="sorting clearfix">
+              <div class="results-title">Найдено: 3</div>
+              <div class="list">
+              <ul>
+                 <li>Сортировка:</li>
                 <li>
                   <a class="sorting-active disabled" href="#">По цене</a>
                 </li>
@@ -82,99 +83,84 @@
               </ul>
             </div>
             <div class="sorting-controls">
-              <a class="arrow ascending" href="#"></a>
-              <a class="arrow descending down-active" href="#"></a>
+              <a class="arrow ascending" href="#">1</a>
+              <a class="arrow descending down-active" href="#">2</a>
             </div>
-          </div>
-        </div> 
-        <div class="items">
-          <div class="item">
-            <div class="results-wrapper">
-              <div class="item-wrapper">
-                <div class="itempic-wrapper"><img src="img/hotel-img1.jpg" width="135" height="90" alt="Amara Resort & Spa"></div>
+            </div>
+          
+          <div class="item clearfix">
+                <figure class="itempic-wrapper"><img src="img/hotel-img1.jpg" width="135" height="90" alt="Amara Resort & Spa"></figure>
                 <div class="item-description">
-                  <h2>
+                  
                     <a href="#" class="item-title">Amara Resort & Spa</a>
-                  </h2>
-                  <div class="item-text">
-                    <span>Гостиница</span>
-                    <span>от 4000 р.</span>
+                  
+                  <div class="item-buttons">
+                    <div class="type">Гостиница</div>
+  			    <a href="#" class="item-btn details">Подробнее</a>
                   </div>
                   <div class="item-buttons">
-                    <a href="#" class="item-btn details">Подробнее</a>
+                    <div class="price">от 2000 р.</div>
                     <a href="#" class="item-btn book">Забронировать</a>
                   </div>
                 </div>
-              </div>
               <div class="item-rating">
                 <div class="rating-stars">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
                 </div>
                 <p class="rating-text">Рейтинг: 8,5</p>
               </div>
-            </div>
           </div>
-          <div class="item">
-            <div class="results-wrapper">
-              <div class="item-wrapper">
-                <div class="itempic-wrapper"><img src="img/hotel-img2.jpg" width="135" height="90" alt="Desert Quail Inn"></div>
+          <div class="item clearfix">
+                <figure class="itempic-wrapper"><img src="img/hotel-img2.jpg" width="135" height="90" alt="Desert Quail Inn"></figure>
                 <div class="item-description">
-                  <h2>
+                  
                     <a href="#" class="item-title">Desert Quail Inn</a>
-                  </h2>
-                  <div class="item-text">
-                    <p>Мотель</p>
-                    <p>от 3000 р.</p>
+                  
+                  <div class="item-buttons">
+                    <div class="type">Мотель</div>
+						<a href="#" class="item-btn details">Подробнее</a>
                   </div>
-                  <p class="item-buttons">
-                    <a href="#" class="item-btn details">Подробнее</a>
-                    <a href="#" class="item-btn book">Забронировать</a>
-                  </p>
+                  <div class="item-buttons">
+                    <div class="price">от 2000 р.</div>
+						<a href="#" class="item-btn book">Забронировать</a>
+                  </div>
                 </div>
-              </div>
               <div class="item-rating">
                 <div class="rating-stars">
-                  <span></span>
-                  <span></span>
-                  <span></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
+                  <span class="icon-star"></span>
                 </div>
                 <p class="rating-text">Рейтинг: 8,9</p>
               </div>
-            </div>
           </div>
-          <div class="item">
-            <div class="results-wrapper">
-              <div class="item-wrapper">
-                <div class="itempic-wrapper"><img src="img/hotel-img3.jpg" width="135" height="90" alt="Villas at Poco Diablo"></div>
-                <div class="item-description">
-                  <h2>
+          <div class="item clearfix">
+              <figure class="itempic-wrapper"><img src="img/hotel-img2.jpg" width="135" height="90" alt="Villas at Poco Diablo"></figure>
+                <div class="item-description clearfix">
                     <a href="#" class="item-title">Villas at Poco Diablo</a>
-                  </h2>
-                  <div class="item-text">
-                    <p class="item-description">Апартаменты</p>
-                    <p>от 2000 р.</p>
+                  <div class="item-buttons">
+                    <div class="type">Апартаменты</div>
+						<a href="#" class="item-btn details">Подробнее</a>
                   </div>
-                  <p class="item-buttons">
-                    <a href="#" class="item-btn details">Подробнее</a>
-                    <a href="#" class="item-btn book">Забронировать</a>
-                  </p>
-                </div>
+                  <div class="item-buttons">
+                      <div class="price">от 4000 р.</div>
+						<a href="#" class="item-btn book">Забронировать</a>
               </div>
-            </div>
+                </div>
+
             <div class="item-rating">
               <div class="rating-stars">
-                <span></span>
-                <span></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
               </div>
               <p class="rating-text">Рейтинг: 9,2</p>
             </div>
           </div>
-        </div>
       </section>
-    </main>
+    
 
     <footer class="footer">
         <span class="hashtag">#Visitsedona</span>
@@ -188,5 +174,6 @@
         <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>      
       </address>
     </footer>
+    </div>
   </body>
 </html>

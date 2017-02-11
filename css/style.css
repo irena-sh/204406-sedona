@@ -5,6 +5,17 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  position: relative;
+  min-width: 768px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
 
   
@@ -121,6 +132,8 @@ h2 .item-title {
   position: relative;
   height: 431px;
   padding-top: 77px;
+  background: #d9eaf2 url("../img/welcome-sedona-bg.jpg") no-repeat;
+  background-size: cover;
 }
 
 .top-background-image img {
@@ -130,11 +143,37 @@ h2 .item-title {
   margin: 0 auto;
 }
 
+.top-background-image:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 57px;
+  background: url("../img/mask.png") no-repeat;
+  background-size: 100% 57px;
+} 
+
 .slogan, .features-blue, .features-white, .features-grey {
   text-align: center;
 }
 
-.text-content h2, .text-content p {
+.promo {
+  width: 576px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: white;
+  }
+  
+.promo h1 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 17px;
+}
+
+.features-white h2, .features-white p {
   margin: 0;
   padding: 0;
 }
@@ -142,23 +181,16 @@ h2 .item-title {
 .features-white {
   min-height: 330px;
   font-size: 0;
-}
-
-.features-blue p {
-  color: black;
+  background-color: white;
 }
 
 .number {
-  color: black;
+  padding-bottom: 21px;
 }
 
 .features-blue, .text-content {
   display: inline-block;
   vertical-align: top;
-}
-
-.features-blue .text-content {
-  padding-top: 53px;
 }
 
 .text-content {
@@ -173,7 +205,7 @@ h2 .item-title {
 .features-white h2 {
   width: 166px;
   margin: 0 auto;
-  padding-bottom: 22px; 
+  padding-bottom: 22px;
 }
 
 .view-image {
@@ -187,30 +219,36 @@ h2 .item-title {
   max-height: 256px;
   overflow: hidden;
   color: white;
+  background-color: #81b3d2;
   font-size: 0;
 }
 
 .features-blue h2 {
-  
+  padding-top: 53px;
+  color: white;
 }
 
-
+.features-blue .text-content {
+  padding-top: 0px;
+}
 
 .features-grey {
   min-height: 256px;
   font-size: 0;
+  background-color: #eeeeee;
 }
 
 .features-grey h2 {
   padding-top: 46px;
+  background-color: #eeeeee;
 }
 
-.one-third {
+.features-white .one-third {
   position: relative;
   padding-top: 160px;
 }
 
-.one-third:before {
+.features-white .one-third:before {
   content: "";
   position: absolute;
   top: 56px;
@@ -258,7 +296,28 @@ h2 .item-title {
   font-weight: bold;
   background-color: #766357;
   text-align: center;
+  color: white;
 }
+
+.map {
+  position: relative;
+  height: 593px;
+  }
+
+.map-picture {
+  height: 593px;
+  background: #cbdda9 url("../img/map.jpg") no-repeat;
+  background-size: cover;
+  background-position: center 0px;
+  }
+  
+.map-picture iframe {
+  width: 100%;
+  height: 593px;
+  border: 0;
+  background-size: cover;
+  background-position: center 0px;
+}  
 
 .search-form {
   position: absolute;
@@ -275,47 +334,6 @@ h2 .item-title {
   box-shadow: 0 2px 5px 0 #d4d2d2;
 } 
 
-/* Футер */
-.index {
-  padding: 36px 0;
-  max-width: 1200px;
-  font-size: 0;
-  background: rgba(254, 254, 254, 0.9);
-}
-
-.hashtag {
-  width: 33.3333333%;
-  font-size: 21px;
-  vertical-align: middle;
-  display: inline-block;
-  
-}
-
-.social {
-  width: 33.3333333%;
-  vertical-align: middle;
-  text-align: center;
-  display: inline-block;
-}
-
-.social .social-btn {
-  display: inline-block;
-  width: 42px;
-  height: 18px;
-  margin-right: 6px;
-  padding: 15px 2px;
-  vertical-align: middle;
-  font-size: 21px;
-}
-
-.copyright {
-  display: inline-block;
-  width: 33.3333333%;
-  font-size: 14px;
-  vertical-align: middle;
-  text-align: center;
-}
-
 /* Страница отелей */
 
 .filters {
@@ -324,7 +342,8 @@ h2 .item-title {
   padding-right: 6%;
   padding-left: 6%;
   color: white;
-  background: blue;
+  background: #766357;
+  background-size: cover;
 }
 
 .filters-column {
@@ -362,57 +381,97 @@ h2 .item-title {
   width: 98%;
   padding: 5px 0;
   text-align: center;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-left: 2%;
 }
 
-.results-wrapper, .item {
+.price-frame-input {
+  display: inline-block;
+  width: 47%;
+  vertical-align: middle;
+}
+
+.price-frame-input-line {
+  display: inline-block;
+  width: 2px;
+  height: 22px;
+  vertical-align: middle;
+  background: white;
+}
+
+.price-frame input {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  width: 98%;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  margin-left: 2%;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.submit {
+  display: block;
+  width: 63px;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+  border: 2px solid white;
+  outline: none;
+}
+
+
+/* поиск */
+
+.sorting {
   padding: 29px 6%;
-}
-
-.results-title, .sorting-title, .sorting-list, .itempic-wrapper {
-  float: left;
-  margin-right: 32px;
-}
-
-.item-description {
-  float: left;
-  max-width: 264px;
-}
-
-.sorting-controls, .item-rating {
-  float: right;
-}
-
-.item-text, .item-buttons {
-  float: left;
-  min-width: 110px;
-  max-width: 142px;
-  margin-top: 8px;
-  margin-right: 6px;
+  border-bottom: 2px solid #e5e5e5;
 }
 
 .results-title {
+  float: left;
+  margin-right: 32px;
   width: 135px;
 }
 
-.sorting-list {
+.list ul {
   margin: 0;
   padding: 0;
   padding-top: 8px;
   list-style: none;
+  font-size: 0;
 }
 
-.sorting-list li {
+.list li {
   display: inline-block;
   margin-right: 32px;
   font-size: 12px;
   vertical-align: top;
 }
 
-.sorting-list li:first-child {
+.list li:first-child {
   margin-right: 40px;
 }
 
-.sorting-list a {
+.list a {
   padding-right: 2px;
   padding-left: 2px;
   color: rgba(0, 0, 0, 0.3);
@@ -420,7 +479,13 @@ h2 .item-title {
   border-bottom: 1px dashed #81b3d2;
 }
 
+.list .sorting-active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
 .sorting-controls {
+  float: right;
   position: relative;
   top: 3px;
   margin-right: -8px;
@@ -428,124 +493,138 @@ h2 .item-title {
   text-align: right;
 }
 
+/* отели */
+
 .item {
-  padding: 30px 0;
-  border-top: 1px solid #e5e5e5;
-}
-
-.items:last-child {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.itempic-wrapper,
-.item-wrapper,
-.item-description {
-  display: inline-block;
-  vertical-align: top;
-  float: left;
-}
-
-.item-wrapper {
-  width: 85%;
-}
-
-.item-description {
-  max-width: 70%;
+  padding: 29px 6%;
+  border-bottom: 2px solid #e5e5e5;
 }
 
 .itempic-wrapper {
-  margin-right: 27px;
-  overflow: hidden;
+  float: left;
+  margin-right: 32px;
   width: 135px;
   height: 90px;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.item-description {
   float: left;
+  max-width: 263px;
 }
 
-.itempic-wrapper img {
-  width: 100%;
-}
-
-.item-title {
+.item-description > a {
+  display: block;
+  margin: 0;
+  margin-top: -6px;
+  padding: 0;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
 }
 
-.item-text {
-  margin: 6px 0 17px;
-  max-width: 265px;
-  font-size: 0;
-  color: #333333;
-}
-
-.item-text p {
-  display: inline-block;
-  font-size: 14px;
-}
-
-.item-text p:first-child{
-  width: 44%;
-}
-
-.item-text p:last-child {
-  width: 56%;
-  vertical-align: top;
-}
-
-.item-buttons, .rating-stars {
-  font-size: 0;
-}
-
-.item-buttons:last-child {
-  margin-right: 0;
-}
-
-.item-btn {
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  height: 27px;
-  text-align: center;
-  color: #ffffff;
+.item-buttons {
+  float: left;
+  min-width: 110px;
+  max-width: 142px;
+  margin-top: 8px;
   margin-right: 6px;
-  box-sizing: border-box;
-  padding-top: 7px;
+}
+
+.item-buttons a {
+  display: block;
+  margin-top: 14px;
+  padding: 5px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .details {
-  width: 110px;
+  color: white;
   background-color: #81b3d2;
 }
 
 .book {
-  width: 142px;
-  background-color: #766357;
+  color: white;
+  background-color: #604e43;
 }
 
 .item-rating {
-  display: inline-block;
+  float: right;
   text-align: right;
-  position: relative;
-  width: 15%;
 }
 
-.rating-text {
-  margin-top: 47px;
-  width: 110px;
-  height: 26px;
-  box-sizing: border-box
-  padding-top: 6px;
-  background-color: #f2f2f2;
+.item-rating .rating-text {
+  margin: 0;
+  margin-top: 75px;
+  margin-right: 2px;
+  padding: 5px 16px;
+  font-size: 14px;
   color: #666666;
-  text-align: center;
-  position: absolute;
-  right: 0px;
+  background: #f2f2f2;
 }
 
-.rating-stars>span {
+.rating-stars {
+  margin-top: -6px;
+  margin-right: -4px;
   font-size: 0;
+}
+
+
+
+/* Футер */
+.footer {
+  padding: 36px 0;
+  font-size: 0;
+  background: rgba(254, 254, 254, 0.9);
+}
+
+.hashtag {
   display: inline-block;
-  width: 19px;
-  height: 17px;
-  margin-left: 4.5px;
+  width: 33.3333333%;
+  font-weight: bold;
+  font-size: 21px;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+.social {
+  display: inline-block;
+  width: 33.3333333%;
+  font-size: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.social .social-btn {
+  display: inline-block;
+  width: 42px;
+  height: 18px;
+  margin-right: 6px;
+  padding: 15px 2px;
+  font-size: 20px;
+  vertical-align: middle;
+  color: white;
+  text-decoration: none;
+  background: #81b3d2;
+}
+
+.copyright {
+  display: inline-block;
+  width: 33.3333333%;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
+  text-decoration: none;
 }
