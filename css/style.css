@@ -85,9 +85,6 @@ h2 .item-title {
 .header {
   font-size: 0;
   background-color: white;
-  /* Только для оформления сетки */
-  min-height: 56px;
-  max-width: 1200px;
   margin-left: auto; 
   margin-right: auto;
 }
@@ -99,6 +96,7 @@ h2 .item-title {
   padding-right: 6%;
   padding-bottom: 19px;
   padding-left: 6%;
+  font-size: 0;
 }
 
 .main-nav li {
@@ -118,6 +116,14 @@ h2 .item-title {
   text-align: right;
 }
 
+.main-nav a:hover {
+  color: #81b3d2;
+}
+
+.main-nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .logo {
   position: absolute;
   left: 50%;
@@ -132,7 +138,7 @@ h2 .item-title {
   position: relative;
   height: 431px;
   padding-top: 77px;
-  background: #d9eaf2 url("../img/welcome-sedona-bg.jpg") no-repeat;
+  background: #d9eaf2 url("../img/top-background-image.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -258,18 +264,27 @@ h2 .item-title {
 }
 
 .house:before {
-  width: 76px;
-  height: 76px;
+  background-image: url("../img/house-icon.png");
+  height: 72px;
+  left: 162px;
+	top: 60px;
+	width: 75px;
 }
 
 .food:before {
-  width: 76px;
-  height: 76px;
+  background-image: url("../img/food-icon.png");
+  height: 70px;
+	left: 563px;
+	top: 61px;
+	width: 74px;
 }
 
 .gift:before {
-  width: 76px;
+  background-image: url("../img/gift-icon.png");
   height: 76px;
+	left: 968px;
+	top: 56px;
+	width: 64px;
 }
 
 .interested-container {
@@ -285,18 +300,205 @@ h2 .item-title {
   padding: 0;
 }
 
-.search-form-container a {
-  display: block;
-  width: 568px;
-  margin-top: 47px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-weight: bold;
+.button-search {
   background-color: #766357;
-  text-align: center;
-  color: white;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+	font-family: inherit;
+	font-size: 21px;
+	font-weight: bold;
+	height: 86px;
+	line-height: 26px;
+	margin-top: 33px;
+	outline: none;
+	text-transform: inherit;
+	width: 568px;
+}
+
+.search-form {
+  background: #ffffff;
+  box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+	color: #000000;
+	display: block;
+	font-weight: bold;
+	line-height: 26px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 395px;
+	padding-top: 55px;
+	width: 568px;
+  }
+
+.form-line {
+  display: block;
+  font-size: 0;
+	margin-bottom: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	width: 458px;
+}
+
+.form-line input {
+  background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
+	height: 38px;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: inherit;
+	line-height: inherit;
+	margin-left: 4px;
+	outline: none;
+	padding-bottom: 4px;
+	padding-left: 11px;
+	padding-right: 0;
+	padding-top: 4px;
+	text-transform: inherit;
+	vertical-align: middle;
+	width: 346px;
+}
+
+.date input {
+  padding-right: 34px;
+}
+
+.form-line input:hover {
+  background-color: #ebebeb;
+	border: 2px solid #ebebeb;
+}
+
+.form-line input:focus {
+  background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.form-line input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.form-line input::-moz-placeholder {
+  color: #000000;
+	opacity: 1;
+}
+
+.form-line input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.icon-calendar, .btn {
+  border: none;
+  font-size: 0;
+	height: 36px;
+	outline: none;
+	position: absolute;
+	top: 1px;
+	width: 37px;
+  }
+  
+.icon-calendar {
+  background: url("../img/index-form-calendar-icon.png") no-repeat 7px 7px;
+  cursor: pointer;
+	opacity: 0.2;
+	right: 0;
+  }
+  
+.icon-calendar:hover {
+  background-image: url("../img/index-calendar-black.png");
+}
+
+.icon-calendar:active {
+  background-image: url("../img/index-calendar-blue.png");
+}
+
+.label {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+	width: 108px;
+  }
+
+.half-width {
+  margin-top: 30px;
+  }
+
+.adult .children {
+  display: block;
+  font-size: 0;
+	position: relative;
+	width: 226px;
+}
+
+.adult {
+    float: left;
+}
+
+.children {
+  float: right;
+  text-align: right;
+  }
+
+.children label {
+  margin-right: 22px;
+	width: 40px;
+}
+
+.half-width input {
+  color: black;
+	display: inline-block;
+	padding-left: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 114px;
+}
+
+.minus-btn {
+  background: url("../img/minus.png") no-repeat 13px 17px;
+  cursor: pointer;
+	left: 112px;
+	opacity: 0.3;
+  }
+
+.minus-btn:hover {
+  background-image: url("../img/minus-black.png");
+	opacity: 1;
+}
+.minus-btn:active {
+	background-image: url("../img/minus-blue.png");
+	opacity: 1;
+}
+
+.plus-btn {
+  background: url("../img/plus.png") no-repeat 13px 13px;
+  cursor: pointer;
+	opacity: 0.3;
+	right: 0;
+}
+
+.plus-btn:hover {
+  background-image: url("../img/plus-black.png");
+}
+.plus-btn:active {
+	background-image: url("../img/plus-blue.png");
+}
+
+.find-btn {
+  background-color: #81b3d2;
+  border: 1px solid #81b3d2;
+	color: #ffffff;
+	cursor: pointer;
+	display: block;
+	font-family: inherit;
+	font-size: 21px;
+	font-weight: bold;
+	height: 58px;
+	line-height: inherit;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 54px;
+	outline: none;
+	text-transform: inherit;
+	width: 458px;
 }
 
 .map {
@@ -317,22 +519,7 @@ h2 .item-title {
   border: 0;
   background-size: cover;
   background-position: center 0px;
-}  
-
-.search-form {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  display: none;
-  width: 458px;
-  padding: 55px;
-  font-weight: bold;
-  font-size: 14px;
-  text-align: right;
-  color: black;
-  background: white;
-  box-shadow: 0 2px 5px 0 #d4d2d2;
-} 
+}
 
 /* Страница отелей */
 
@@ -342,7 +529,7 @@ h2 .item-title {
   padding-right: 6%;
   padding-left: 6%;
   color: white;
-  background: #766357;
+  background: #766357 url("../img/hotels-background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -368,8 +555,39 @@ h2 .item-title {
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
-  font-weight: bold;
   font-size: 16px;
+}
+
+.filters input[type="checkbox"] {
+  display: none;
+}
+
+.filters input[type="checkbox"] + label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filters input[type="checkbox"] + label:before {
+  content: "\2610";
+  display: inline-block;
+  width: 40px;
+  font-size: 24px;
+  font-family: "symbols-sedona";
+  vertical-align: middle;
+  color: white;
+  opacity: 0.7;
+}
+
+.filters input[type="checkbox"] + label:hover:before {
+  opacity: 1;
+}
+
+.filters input[type="checkbox"]:checked + label:before {
+  content: "\2611";
+}
+
+.filters input[type="checkbox"]:disabled + label:before {
+  opacity: 0.3;
 }
 
 .filter-checkbox {
@@ -423,6 +641,32 @@ h2 .item-title {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.scale .bar {
+  width: 73%;
+  height: 2px;
+  background: white;
+}
+
+.toggle {
+  position: absolute;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.max-toggle {
+  left: 73%;
+}
+
+.toggle:hover {
+  background: #1c4f80;
+}
+/* кнопка сломалась */
 .submit {
   display: block;
   width: 63px;
@@ -437,7 +681,6 @@ h2 .item-title {
   border: 2px solid white;
   outline: none;
 }
-
 
 /* поиск */
 
@@ -578,8 +821,6 @@ figure {
   font-size: 0;
 }
 
-
-
 /* Футер */
 .footer {
   padding: 36px 0;
@@ -622,9 +863,29 @@ figure {
 .copyright {
   display: inline-block;
   width: 33.3333333%;
+  font-style: normal;
   font-size: 14px;
   vertical-align: middle;
   text-align: center;
   color: black;
   text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon-check-off:before {
+  content: "\2610";
+}
+
+.icon-check-on:before {
+  content: "\2611";
 }
