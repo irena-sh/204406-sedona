@@ -267,7 +267,7 @@ h2 .item-title {
   background-image: url("../img/house-icon.png");
   height: 72px;
   left: 162px;
-	top: 60px;
+  top: 60px;
 	width: 75px;
 }
 
@@ -316,10 +316,14 @@ h2 .item-title {
 	width: 568px;
 }
 
+.search-form-container {
+  position: relative;
+  }
+
 .search-form {
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0,0,0,0.15);
-	color: #000000;
+  color: #000000;
 	display: block;
 	font-weight: bold;
 	line-height: 26px;
@@ -328,7 +332,20 @@ h2 .item-title {
 	min-height: 395px;
 	padding-top: 55px;
 	width: 568px;
+  position: absolute;
+  padding-top: 55px;
+  z-index: 1;
   }
+
+.wrapper {
+  position: relative;
+  min-width: 768px;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  box-shadow: 0 -5px 9px 2px #dbdbdb;
+}
 
 .form-line {
   display: block;
@@ -517,8 +534,6 @@ h2 .item-title {
   width: 100%;
   height: 593px;
   border: 0;
-  background-size: cover;
-  background-position: center 0px;
 }
 
 /* Страница отелей */
@@ -668,18 +683,16 @@ h2 .item-title {
 }
 /* кнопка сломалась */
 .submit {
-  display: block;
-  width: 63px;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 20%;
+  padding: 6px 31px;
+  font-style: normal;
   font-size: 14px;
-  text-align: center;
-  color: white;
+  line-height: 21px;
   text-transform: uppercase;
-  text-decoration: none;
-  background: none;
-  border: 2px solid white;
-  outline: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /* поиск */
@@ -735,6 +748,25 @@ h2 .item-title {
   font-size: 0;
   text-align: right;
 }
+
+.sorting-controls .arrow .ascending {
+  display:inline-block;
+  vertical-align: top;
+  width: 14px;
+  height: 11px;
+  margin-top: 8px;
+  border: none;
+  }
+
+.sorting-controls .down-active {
+  display:inline-block;
+  vertical-align: top;
+  width: 14px;
+  height: 11px;
+  border: none;
+  margin-top: 7px;
+  }
+
 
 /* отели */
 
@@ -828,6 +860,13 @@ figure {
   background: rgba(254, 254, 254, 0.9);
 }
 
+.map .footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .hashtag {
   display: inline-block;
   width: 33.3333333%;
@@ -869,6 +908,16 @@ figure {
   text-align: center;
   color: black;
   text-decoration: none;
+  background: url("../img/logo-copyright.png") no-repeat;
+}
+
+.copyright a:hover {
+  background: url("../img/logo-copyright-blue.png") no-repeat;
+}
+
+.copyright a:active {
+  background: url("../img/logo-copyright-grey.png") no-repeat;
+  opacity: 0.3;
 }
 
 .visually-hidden {
