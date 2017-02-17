@@ -1,4 +1,4 @@
-body {
+п»їbody {
   font-size: 14px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: normal;
@@ -133,7 +133,7 @@ h2 .item-title {
   margin-left: -69px;
 }
 
-/* Главная станица */
+/* Р“Р»Р°РІРЅР°СЏ СЃС‚Р°РЅРёС†Р° */
 .top-background-image {
   position: relative;
   height: 431px;
@@ -268,7 +268,7 @@ h2 .item-title {
   height: 72px;
   left: 162px;
   top: 60px;
-	width: 75px;
+  width: 75px;
 }
 
 .food:before {
@@ -328,13 +328,15 @@ h2 .item-title {
 	font-weight: bold;
 	line-height: 26px;
 	margin-left: auto;
-	margin-right: auto;
+  margin-right: auto;
 	min-height: 395px;
 	padding-top: 55px;
 	width: 568px;
-  position: absolute;
   padding-top: 55px;
+  position: absolute;
   z-index: 1;
+  margin-left: 26.4%;
+  margin-right: 26.4%;
   }
 
 .wrapper {
@@ -353,8 +355,7 @@ h2 .item-title {
 	margin-bottom: 29px;
 	margin-left: auto;
 	margin-right: auto;
-	position: relative;
-	width: 458px;
+	width: 458px
 }
 
 .form-line input {
@@ -521,6 +522,7 @@ h2 .item-title {
 .map {
   position: relative;
   height: 593px;
+
   }
 
 .map-picture {
@@ -536,7 +538,7 @@ h2 .item-title {
   border: 0;
 }
 
-/* Страница отелей */
+/* РЎС‚СЂР°РЅРёС†Р° РѕС‚РµР»РµР№ */
 
 .filters {
   padding-bottom: 30px;
@@ -681,7 +683,7 @@ h2 .item-title {
 .toggle:hover {
   background: #1c4f80;
 }
-/* кнопка сломалась */
+/* РєРЅРѕРїРєР° СЃР»РѕРјР°Р»Р°СЃСЊ */
 .submit {
   margin-left: 20%;
   padding: 6px 31px;
@@ -695,7 +697,7 @@ h2 .item-title {
   cursor: pointer;
 }
 
-/* поиск */
+/* РїРѕРёСЃРє */
 
 .sorting {
   padding: 29px 6%;
@@ -768,7 +770,7 @@ h2 .item-title {
   }
 
 
-/* отели */
+/* РѕС‚РµР»Рё */
 
 .item {
   padding: 29px 6%;
@@ -853,11 +855,12 @@ figure {
   font-size: 0;
 }
 
-/* Футер */
+/* Р¤СѓС‚РµСЂ */
 .footer {
   padding: 36px 0;
   font-size: 0;
   background: rgba(254, 254, 254, 0.9);
+  position: relative;
 }
 
 .map .footer {
