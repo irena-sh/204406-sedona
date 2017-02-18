@@ -137,7 +137,7 @@ h2 .item-title {
   position: relative;
   height: 431px;
   padding-top: 77px;
-  background: #d9eaf2 url("../img/top-background-image.jpg") no-repeat;
+  background: #d9eaf2 url("../img/background-photo.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -159,6 +159,14 @@ h2 .item-title {
   background: url("../img/mask.png") no-repeat;
   background-size: 100% 57px;
 } 
+
+.sedona {
+  width: 576px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: white;
+  }
 
 .slogan, .features-blue, .features-white, .features-grey {
   text-align: center;
@@ -375,12 +383,13 @@ h2 .item-title {
 	margin-bottom: 29px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 458px
+	position: relative;
+	width: 458px;
 }
 
 .form-line input {
   background-color: #f2f2f2;
-	border: 2px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
 	height: 38px;
 	font-family: inherit;
 	font-size: 14px;
@@ -424,7 +433,7 @@ h2 .item-title {
   color: #000000;
 }
 
-.icon-calendar, .btn {
+.look-icons {
   border: none;
   font-size: 0;
 	height: 36px;
@@ -435,11 +444,11 @@ h2 .item-title {
   }
   
 .icon-calendar {
-  background: url("../img/index-form-calendar-icon.png") no-repeat 7px 7px;
+  background: url("../img/index-form-calendar-icon.png") no-repeat;
   cursor: pointer;
 	opacity: 0.2;
-	right: 0;
-  }
+  right: 0;
+  }  
   
 .icon-calendar:hover {
   background-image: url("../img/index-calendar-black.png");
@@ -460,7 +469,7 @@ h2 .item-title {
   margin-top: 30px;
   }
 
-.adult .children {
+.people {
   display: block;
   font-size: 0;
 	position: relative;
@@ -971,8 +980,19 @@ figure {
   text-align: center;
   color: black;
   text-decoration: none;
-  background: url("../img/logo-copyright.png") no-repeat;
 }
+
+.copyright a {
+  display: inline-block;
+  width: 113px;
+  height: 39px;
+  margin-left: 8px;
+  font-size: 14px;
+  vertical-align: middle;
+  text-align: center;
+  background: url("../img/logo-copyright.png") no-repeat;
+  font-size: 0;
+  }
 
 .copyright a:hover {
   background: url("../img/logo-copyright-blue.png") no-repeat;
