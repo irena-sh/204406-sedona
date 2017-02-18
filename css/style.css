@@ -17,8 +17,7 @@
   background-color: white;
   box-shadow: 0 -5px 9px 2px #dbdbdb;
 }
-
-  
+ 
 h1 {
   font-size: 21px;
   font-weight: bold;
@@ -274,7 +273,7 @@ h2 .item-title {
 .food:before {
   background-image: url("../img/food-icon.png");
   height: 70px;
-	left: 563px;
+  left: 563px;
 	top: 61px;
 	width: 74px;
 }
@@ -318,13 +317,14 @@ h2 .item-title {
 
 .search-form-container {
   position: relative;
+  
   }
 
 .search-form {
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0,0,0,0.15);
   color: #000000;
-	display: block;
+  display: block;
 	font-weight: bold;
 	line-height: 26px;
 	margin-left: auto;
@@ -338,16 +338,6 @@ h2 .item-title {
   margin-left: 26.4%;
   margin-right: 26.4%;
   }
-
-.wrapper {
-  position: relative;
-  min-width: 768px;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: white;
-  box-shadow: 0 -5px 9px 2px #dbdbdb;
-}
 
 .form-line {
   display: block;
@@ -519,13 +509,18 @@ h2 .item-title {
 	width: 458px;
 }
 
+.find-btn:hover {
+  color: white;
+  background-color: #669ec0;
+}
+
+.find-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
 .map {
   position: relative;
-  height: 593px;
-
-  }
-
-.map-picture {
   height: 593px;
   background: #cbdda9 url("../img/map.jpg") no-repeat;
   background-size: cover;
@@ -683,7 +678,7 @@ h2 .item-title {
 .toggle:hover {
   background: #1c4f80;
 }
-/* кнопка сломалась */
+
 .submit {
   margin-left: 20%;
   padding: 6px 31px;
@@ -900,6 +895,15 @@ figure {
   color: white;
   text-decoration: none;
   background: #81b3d2;
+}
+
+.social .social-btn:hover {
+  background: #669ec0;
+}
+
+.social .social-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 .copyright {
