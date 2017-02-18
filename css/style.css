@@ -160,13 +160,6 @@ h2 .item-title {
   background-size: 100% 57px;
 } 
 
-.sedona {
-  width: 576px;
-  margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
-  background-color: white;
-  }
 
 .slogan, .features-blue, .features-white, .features-grey {
   text-align: center;
@@ -436,7 +429,7 @@ h2 .item-title {
 .look-icons {
   border: none;
   font-size: 0;
-	height: 36px;
+  height: 36px;
 	outline: none;
 	position: absolute;
 	top: 1px;
@@ -444,9 +437,9 @@ h2 .item-title {
   }
   
 .icon-calendar {
-  background: url("../img/index-form-calendar-icon.png") no-repeat;
+  background: black url("../img/index-form-calendar-icon.png") no-repeat;
   cursor: pointer;
-	opacity: 0.2;
+  opacity: 0.2;
   right: 0;
   }  
   
@@ -607,6 +600,7 @@ h2 .item-title {
   padding: 0;
   padding-bottom: 12px;
   font-size: 16px;
+  color: white;
 }
 
 .filters input[type="checkbox"] {
@@ -659,6 +653,7 @@ h2 .item-title {
   display: inline-block;
   width: 47%;
   vertical-align: middle;
+  
 }
 
 .price-frame-input-line {
@@ -901,8 +896,9 @@ figure {
 
 .item-rating .rating-text {
   margin: 0;
-  margin-top: 75px;
+  margin-top: 50px;
   margin-right: 2px;
+  padding: 0;
   padding: 5px 16px;
   font-size: 14px;
   color: #666666;
@@ -970,6 +966,38 @@ figure {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
+
+.social::before {
+  content: "";
+  display: block;
+	position: absolute;
+}
+
+.social-btn-tw {
+  background: url("../img/twitter.png") no-repeat;
+  height: 15px;
+	left: 15px;
+	top: 17px;
+	width: 17px;
+}
+
+.social-btn-fb {
+  background: url("../img/facebook.png") no-repeat;
+  height: 19px;
+	left: 18px;
+	top: 13px;
+	width: 10px;
+}
+
+.social-btn-youtube {
+  background: url("../img/youtube.png") no-repeat;
+  height: 16px;
+	left: 13px;
+	top: 16px;
+	width: 20px;
+}
+
+
 
 .copyright {
   display: inline-block;
