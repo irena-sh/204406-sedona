@@ -132,7 +132,7 @@ h2 .item-title {
   margin-left: -69px;
 }
 
-/* Главная станица */
+/* Главная страница */
 .top-background-image {
   position: relative;
   height: 431px;
@@ -274,7 +274,7 @@ h2 .item-title {
   background-image: url("../img/food-icon.png");
   height: 70px;
   left: 563px;
-	top: 61px;
+  top: 61px;
 	width: 74px;
 }
 
@@ -317,7 +317,6 @@ h2 .item-title {
 
 .search-form-container {
   position: relative;
-  
   }
 
 .search-form {
@@ -326,18 +325,49 @@ h2 .item-title {
   color: #000000;
   display: block;
 	font-weight: bold;
+	left: 50%;
 	line-height: 26px;
-	margin-left: auto;
-  margin-right: auto;
+	margin-left: -284px;
 	min-height: 395px;
 	padding-top: 55px;
+	position: absolute;
+	top:0;
+	transition: 1s;
 	width: 568px;
-  padding-top: 55px;
-  position: absolute;
   z-index: 1;
-  margin-left: 26.4%;
-  margin-right: 26.4%;
   }
+  
+.search-form {
+  -webkit-animation: bounce 0.6s;
+  animation: bounce 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateX(-2000px);
+        -ms-transform: translateX(-2000px);
+            transform: translateX(-2000px);
+  }
+  100% {
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+     -webkit-transform: translateX(-2000px);
+         -ms-transform: translateX(-2000px);
+             transform: translateX(-2000px);
+   }
+   100% {
+     -webkit-transform: translateX(-50%);
+         -ms-transform: translateX(-50%);
+             transform: translateX(-50%);
+   }
+}
+
 
 .form-line {
   display: block;
@@ -680,16 +710,19 @@ h2 .item-title {
 }
 
 .submit {
-  margin-left: 20%;
-  padding: 6px 31px;
-  font-style: normal;
+  display: block;
+  width: 138px;
+  height: 37px;
+  margin: 0 auto;
+  padding: 6px 35px;
   font-size: 14px;
-  line-height: 21px;
+  text-align: center;
+  color: white;
   text-transform: uppercase;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  cursor: pointer;
+  text-decoration: none;
+  background: none;
+  border: 2px solid white;
+  outline: none;
 }
 
 /* поиск */
@@ -704,6 +737,11 @@ h2 .item-title {
   margin-right: 32px;
   width: 135px;
 }
+
+.list {
+  float: left;
+  margin-right: 32px;
+  }
 
 .list ul {
   margin: 0;
@@ -742,11 +780,11 @@ h2 .item-title {
   position: relative;
   top: 3px;
   margin-right: -8px;
-  font-size: 0;
+ 
   text-align: right;
 }
 
-.sorting-controls .arrow .ascending {
+.ascending {
   display:inline-block;
   vertical-align: top;
   width: 14px;
@@ -755,7 +793,7 @@ h2 .item-title {
   border: none;
   }
 
-.sorting-controls .down-active {
+.down-active {
   display:inline-block;
   vertical-align: top;
   width: 14px;
@@ -763,6 +801,24 @@ h2 .item-title {
   border: none;
   margin-top: 7px;
   }
+  
+.sorting-controls .arrow {
+  color: #cccccc;
+  text-decoration: none;
+}
+
+.sorting-controls .arrow:hover {
+  color: #000000;
+}
+
+.sorting-controls .arrow:active {
+  color: #81b3d2;
+}
+
+.sorting-controls .down-active {
+  color: #81b3d2;
+  text-decoration: none;
+}
 
 
 /* отели */
@@ -944,4 +1000,12 @@ figure {
 
 .icon-check-on:before {
   content: "\2611";
+}
+
+.ascending:before {
+  content: "\25b2";
+}
+
+.down-active:before {
+  content: "\25bc";
 }
