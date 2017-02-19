@@ -6,6 +6,7 @@
   text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
+  margin: 0;
 }
 
 .wrapper {
@@ -614,7 +615,7 @@ h2 .item-title {
   float: left;
   box-sizing: border-box;
   width: 186px;
-  margin-right: 2%;
+  margin-right: 6.5%;
 }
 
 .filters-price {
@@ -669,7 +670,7 @@ h2 .item-title {
 }
 
 .filter-checkbox {
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .price-frame {
@@ -760,6 +761,11 @@ h2 .item-title {
   background: none;
   border: 2px solid white;
   outline: none;
+}
+
+.submit:hover {
+  color: #000000;
+  background: #ffffff;
 }
 
 /* поиск */
@@ -878,7 +884,7 @@ figure {
 
 .item-description {
   float: left;
-  max-width: 263px;
+  max-width: 264px;
 }
 
 .item-description > a {
@@ -996,46 +1002,33 @@ figure {
 	position: absolute;
 }
 
-.social-btn-tw {
+.social .social-btn-tw {
   background: url("../img/twitter.png") no-repeat center;
-  height: 15px;
-	left: 15px;
-	top: 17px;
-	width: 17px;
 }
 
-.social-btn-fb {
+.social .social-btn-fb {
   background: url("../img/facebook.png") no-repeat center;
-  height: 19px;
-	left: 18px;
-	top: 13px;
-	width: 10px;
 }
 
-.social-btn-youtube {
+.social .social-btn-youtube {
   background: url("../img/youtube.png") no-repeat center;
-  height: 16px;
-	left: 13px;
-	top: 16px;
-	width: 20px;
 }
 
-.social-btn-tw:hover, .social-btn-fb:hover, .social-btn-youtube:hover {
+.social .social-btn-tw:hover, .social .social-btn-fb:hover, .social .social-btn-youtube:hover {
   background-color: #669ec0;
 }
 
-.social-btn-tw:active {
+.social .social-btn-tw:active {
   background: #5496bd url("../img/twitter2.png") no-repeat center;
 }
 
-.social-btn-fb:active {
+.social .social-btn-fb:active {
   background: #5496bd url("../img/facebook2.png") no-repeat center;
 }
 
-.social-btn-youtube:active {
+.social .social-btn-youtube:active {
   background: #5496bd url("../img/youtube2.png") no-repeat center;
 }
-
 
 .copyright {
   display: inline-block;
