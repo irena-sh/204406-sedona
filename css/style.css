@@ -87,6 +87,7 @@ h2 .item-title {
   background-color: white;
   margin-left: auto; 
   margin-right: auto;
+  height: 59px;
 }
 
 .main-nav {
@@ -306,15 +307,15 @@ h2 .item-title {
   border: none;
   color: #ffffff;
   cursor: pointer;
-	font-family: inherit;
-	font-size: 21px;
-	font-weight: bold;
-	height: 86px;
-	line-height: 26px;
-	margin-top: 33px;
-	outline: none;
-	text-transform: inherit;
-	width: 568px;
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  height: 86px;
+  line-height: 26px;
+  margin-top: 33px;
+  outline: none;
+  text-transform: inherit;
+  width: 568px;
 }
 
 .search-form-container {
@@ -326,16 +327,16 @@ h2 .item-title {
   width: 568px;
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0,0,0,0.15);
-	color: #000000;
-	display: block;
-	font-weight: bold;
-	left: 50%;
-	line-height: 26px;
-	margin-left: -284px;
-	min-height: 345px;
-	padding-top: 55px;
-	top:0;
-	transition: 1s;
+  color: #000000;
+  display: block;
+  font-weight: bold;
+  left: 50%;
+  line-height: 26px;
+  margin-left: -284px;
+  min-height: 345px;
+  padding-top: 55px;
+  top:0;
+  transition: 1s;
   z-index: 1;
   }
   
@@ -373,49 +374,50 @@ h2 .item-title {
 .form-line {
   display: block;
   font-size: 0;
-	margin-bottom: 29px;
-	margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	width: 458px;
+  margin-bottom: 29px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 458px;
 }
 
 .form-line input {
   background-color: #f2f2f2;
   border: 2px solid #f2f2f2;
-	height: 38px;
-	font-family: inherit;
-	font-size: 14px;
-	font-weight: inherit;
-	line-height: inherit;
-	margin-left: 4px;
-	outline: none;
-	padding-bottom: 4px;
-	padding-left: 11px;
-	padding-right: 0;
-	padding-top: 4px;
-	text-transform: inherit;
-	vertical-align: middle;
-	width: 346px;
+  height: 38px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-left: 4px;
+  outline: none;
+  padding-bottom: 4px;
+  padding-left: 11px;
+  padding-right: 0;
+  padding-top: 4px;
+  text-transform: inherit; 
+  vertical-align: middle;
+  width: 346px;
 }
 
 .date input {
   padding-right: 34px;
+  text-indent: 11px;
 }
 
 .date input {
-    padding-right: 11px;
-    margin: 0 0;
-    padding: 0 0;
+  padding-right: 11px;
+  margin: 0 0;
+  padding: 0 0;
 }
 .form-line input:hover {
   background-color: #ebebeb;
-	border: 2px solid #ebebeb;
+  border: 2px solid #ebebeb;
 }
 
 .form-line input:focus {
   background-color: #ffffff;
-	border: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 .form-line input::-webkit-input-placeholder {
@@ -434,11 +436,11 @@ h2 .item-title {
 .look-icons {
   border: none;
   font-size: 0;
-	height: 36px;
-	outline: none;
+  height: 36px;
+  outline: none;
   position: absolute;
-	top: 1px;
-	width: 37px;
+  top: 1px;
+  width: 37px;
   }
   
 .icon-calendar {
@@ -454,11 +456,11 @@ h2 .item-title {
   
 .icon-calendar:hover {
   background-image: url("../img/index-calendar-black.png");
-	opacity: 1;
+  opacity: 1;
 }
 .icon-calendar:active {
-	background: url("../img/index-calendar-blue.png") no-repeat;
-	opacity: 1;
+ background: url("../img/index-calendar-blue.png") no-repeat;
+ opacity: 1;
 }  
   
 .icon-calendar:hover {
@@ -472,8 +474,8 @@ h2 .item-title {
 .label {
   display: inline-block;
   font-size: 14px;
-	vertical-align: middle;
-	width: 108px;
+  vertical-align: middle;
+  width: 108px;
   }
 
 .half-width {
@@ -483,8 +485,8 @@ h2 .item-title {
 .people {
   display: block;
   font-size: 0;
-	position: relative;
-	width: 226px;
+  position: relative;
+  width: 226px;
   margin: 0 0;
   padding: 0 0;
 }
@@ -513,7 +515,7 @@ h2 .item-title {
 	width: 40px;
 }
 
-.people  input {
+.people input {
   color: black;
   display: inline-block;
 	text-align: center;
@@ -541,9 +543,9 @@ h2 .item-title {
 
 .plus-btn {
   background: url("../img/plus.png") no-repeat;
-	cursor: pointer;
-	opacity: 0.3;
-	right: 0;
+  cursor: pointer;
+  opacity: 0.3;
+  right: 0;
   top: 14px;
 }
 
@@ -559,20 +561,20 @@ h2 .item-title {
 .find-btn {
   background-color: #81b3d2;
   border: 1px solid #81b3d2;
-	color: #ffffff;
-	cursor: pointer;
-	display: block;
-	font-family: inherit;
-	font-size: 21px;
-	font-weight: bold;
-	height: 58px;
-	line-height: inherit;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 54px;
-	outline: none;
-	text-transform: inherit;
-	width: 458px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: bold;
+  height: 58px;
+  line-height: inherit; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 54px;
+  outline: none;
+  text-transform: inherit;
+  width: 458px;
 }
 
 .find-btn:hover {
@@ -1014,8 +1016,16 @@ figure {
   background: url("../img/youtube.png") no-repeat center;
 }
 
-.social .social-btn-tw:hover, .social .social-btn-fb:hover, .social .social-btn-youtube:hover {
-  background-color: #669ec0;
+.social .social-btn-tw:hover {
+  background: url("../img/twitter1.png") no-repeat center;
+}
+
+.social .social-btn-fb:hover {
+  background: url("../img/facebook1.png") no-repeat center;
+}
+
+.social .social-btn-youtube:hover {
+  background: url("../img/youtube1.png") no-repeat center;
 }
 
 .social .social-btn-tw:active {
