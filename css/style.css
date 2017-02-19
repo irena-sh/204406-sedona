@@ -321,6 +321,7 @@ h2 .item-title {
   }
 
 .search-form {
+  position: absolute;
   width: 568px;
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0,0,0,0.15);
@@ -330,9 +331,8 @@ h2 .item-title {
 	left: 50%;
 	line-height: 26px;
 	margin-left: -284px;
-	min-height: 395px;
+	min-height: 345px;
 	padding-top: 55px;
-	position: absolute;
 	top:0;
 	transition: 1s;
   z-index: 1;
@@ -391,7 +391,7 @@ h2 .item-title {
 	outline: none;
 	padding-bottom: 4px;
 	padding-left: 11px;
-	padding-right: 11px;
+	padding-right: 0;
 	padding-top: 4px;
 	text-transform: inherit;
 	vertical-align: middle;
@@ -441,13 +441,14 @@ h2 .item-title {
   }
   
 .icon-calendar {
-  background: black url("../img/index-form-calendar-icon.png") no-repeat;
+  background: url("../img/index-form-calendar-icon.png") no-repeat;
   position: absolute;
   margin: 0;
   padding: 0;
   font-size: 20px;
   color: #c2c2c2;
-  right: 0;
+  right: -9px;
+  top: 8px;
   }  
   
 .icon-calendar:hover {
@@ -487,13 +488,17 @@ h2 .item-title {
   padding: 0 0;
 }
 
+.people input {
+  padding: 0 0 ;
+  }
+
 .adult {
   float: left;
   text-align: left;
 }
 
 .adult label {
-  margin-right: 42px;
+  margin-right: 38px;
   width: 66px;
 }
 
@@ -513,13 +518,15 @@ h2 .item-title {
 	text-align: center;
 	vertical-align: middle;
 	width: 114px;
+  margin: 0 0;
 }
 
 .minus-btn {
   background: url("../img/minus.png") no-repeat;
   cursor: pointer;
-	left: 112px;
+	left: 126px;
 	opacity: 0.3;
+  top: 18px;
   }
 
 .minus-btn:hover {
@@ -532,17 +539,20 @@ h2 .item-title {
 }
 
 .plus-btn {
-  background: url("../img/plus.png") no-repeat 12px -804px;
+  background: url("../img/plus.png") no-repeat;
 	cursor: pointer;
 	opacity: 0.3;
 	right: 0;
+  top: 14px;
 }
 
 .plus-btn:hover {
   background-image: url("../img/plus-black.png");
+  opacity: 1;
 }
 .plus-btn:active {
 	background-image: url("../img/plus-blue.png");
+  opacity: 1;
 }
 
 .find-btn {
@@ -980,15 +990,6 @@ figure {
   background: #81b3d2;
 }
 
-.social .social-btn:hover {
-  background: #669ec0;
-}
-
-.social .social-btn:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
-}
-
 .social::before {
   content: "";
   display: block;
@@ -996,7 +997,7 @@ figure {
 }
 
 .social-btn-tw {
-  background: url("../img/twitter.png") no-repeat;
+  background: url("../img/twitter.png") no-repeat center;
   height: 15px;
 	left: 15px;
 	top: 17px;
@@ -1004,7 +1005,7 @@ figure {
 }
 
 .social-btn-fb {
-  background: url("../img/facebook.png") no-repeat;
+  background: url("../img/facebook.png") no-repeat center;
   height: 19px;
 	left: 18px;
 	top: 13px;
@@ -1012,11 +1013,27 @@ figure {
 }
 
 .social-btn-youtube {
-  background: url("../img/youtube.png") no-repeat;
+  background: url("../img/youtube.png") no-repeat center;
   height: 16px;
 	left: 13px;
 	top: 16px;
 	width: 20px;
+}
+
+.social-btn-tw:hover, .social-btn-fb:hover, .social-btn-youtube:hover {
+  background-color: #669ec0;
+}
+
+.social-btn-tw:active {
+  background: #5496bd url("../img/twitter2.png") no-repeat center;
+}
+
+.social-btn-fb:active {
+  background: #5496bd url("../img/facebook2.png") no-repeat center;
+}
+
+.social-btn-youtube:active {
+  background: #5496bd url("../img/youtube2.png") no-repeat center;
 }
 
 
@@ -1050,17 +1067,6 @@ figure {
 .copyright a:active {
   background: url("../img/logo-copyright-grey.png") no-repeat;
   opacity: 0.3;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .icon-check-off:before {
