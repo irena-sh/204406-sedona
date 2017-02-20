@@ -209,8 +209,8 @@ h2 .item-title {
 .text-content {
   box-sizing: border-box;
   width: 33.333333%;
-  padding-right: 5.5%;
-  padding-left: 5.5%;
+  padding-right: 5.1%;
+  padding-left: 5.1%;
   font-size: 14px;
   line-height: 21px;
 }
@@ -317,7 +317,7 @@ h2 .item-title {
   font-weight: bold;
   height: 86px;
   line-height: 26px;
-  margin-top: 33px;
+  margin-top: 37px;
   outline: none;
   text-transform: inherit;
   width: 568px;
@@ -339,7 +339,7 @@ h2 .item-title {
   line-height: 26px;
   margin-left: -284px;
   min-height: 345px;
-  padding-top: 55px;
+  padding-top: 50px;
   top:0;
   transition: 1s;
   z-index: 1;
@@ -577,7 +577,7 @@ h2 .item-title {
   line-height: inherit; 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 54px;
+  margin-top: 50px;
   outline: none;
   text-transform: inherit;
   width: 458px;
