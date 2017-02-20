@@ -134,6 +134,11 @@ h2 .item-title {
   margin-left: -69px;
 }
 
+.logo a {
+  border: none;
+  outline: none;
+}
+
 /* Главная страница */
 .top-background-image {
   position: relative;
@@ -173,7 +178,7 @@ h2 .item-title {
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: white;
-  }
+}
   
 .promo h1 {
   margin: 0;
@@ -284,9 +289,9 @@ h2 .item-title {
 .gift:before {
   background-image: url("../img/gift-icon.png");
   height: 76px;
-	left: 968px;
-	top: 56px;
-	width: 64px;
+  left: 968px;
+  top: 56px;
+  width: 64px;
 }
 
 .interested-container {
@@ -338,7 +343,7 @@ h2 .item-title {
   top:0;
   transition: 1s;
   z-index: 1;
-  }
+ }
   
 .search-form {
   -webkit-animation: bounce 0.6s;
@@ -442,7 +447,7 @@ h2 .item-title {
   position: absolute;
   top: 1px;
   width: 37px;
-  }
+}
   
 .icon-calendar {
   background: url("../img/index-form-calendar-icon.png") no-repeat;
@@ -453,7 +458,7 @@ h2 .item-title {
   color: #c2c2c2;
   right: -9px;
   top: 8px;
-  }  
+}  
   
 .icon-calendar:hover {
   background-image: url("../img/index-calendar-black.png");
@@ -764,6 +769,7 @@ h2 .item-title {
   background: none;
   border: 2px solid white;
   outline: none;
+  font-family: 'PT Sans', Arial, sans-serif;
 }
 
 .submit:hover {
@@ -787,7 +793,7 @@ h2 .item-title {
 .list {
   float: left;
   margin-right: 32px;
-  }
+}
 
 .list ul {
   margin: 0;
@@ -836,7 +842,7 @@ h2 .item-title {
   height: 11px;
   margin-top: 8px;
   border: none;
-  }
+}
 
 .down-active {
   display:inline-block;
@@ -845,7 +851,7 @@ h2 .item-title {
   height: 11px;
   border: none;
   margin-top: 7px;
-  }
+}
   
 .sorting-controls .arrow {
   color: #cccccc;
@@ -1062,7 +1068,7 @@ figure {
   text-align: center;
   background: url("../img/logo-copyright.png") no-repeat;
   font-size: 0;
-  }
+}
 
 .copyright a:hover {
   background: url("../img/logo-copyright-blue.png") no-repeat;
