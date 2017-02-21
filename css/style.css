@@ -251,15 +251,16 @@ h2 .item-title {
 .features-blue h2 {
   padding-top: 36px;
   color: white;
+  margin-bottom: 25px;
 }
 
 .features-blue p {
-  padding-top: 12px;
+  padding-top: 5px;
 }
 
 .blue {
-padding-right: 3.5%;
-padding-left: 3.5%
+  padding-right: 3.5%;
+  padding-left: 3.5%
 }
 
 .text-content .text-content {
@@ -275,10 +276,11 @@ padding-left: 3.5%
 .features-grey h2 {
   padding-top: 30px;
   background-color: #eeeeee;
+  margin-bottom: 25px;
 }
 
 .features-grey p {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .features-white .one-third {
@@ -290,7 +292,7 @@ padding-left: 3.5%
   content: "";
   position: absolute;
   top: 56px;
-  left: 50%;
+  left: 50.5%;
   display: block;
   margin-left: -38px;
 }
@@ -327,6 +329,7 @@ padding-left: 3.5%
   width: 568px;
   margin: 0 auto;
   text-align: center;
+  line-height: 24px;
 }
 
 .interested-container h2 {
@@ -346,7 +349,7 @@ padding-left: 3.5%
   font-weight: bold;
   height: 86px;
   line-height: 26px;
-  margin-top: 37px;
+  margin-top: 32px;
   outline: none;
   text-transform: inherit;
   width: 568px;
@@ -369,7 +372,7 @@ padding-left: 3.5%
   margin-left: -284px;
   min-height: 345px;
   padding-top: 50px;
-  top:0;
+  top: 0;
   transition: 1s;
   z-index: 1;
  }
@@ -408,13 +411,11 @@ padding-left: 3.5%
 .form-line {
   display: block;
   font-size: 0;
-  margin-bottom: 29px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   width: 458px;
   margin-bottom: 28px;
-  padding-top: 2px;
 }
 
 .form-line input {
@@ -539,7 +540,7 @@ padding-left: 3.5%
 }
 
 .adult label {
-  margin-right: 38px;
+  margin-right: 43px;
   width: 66px;
 }
 
@@ -558,7 +559,7 @@ padding-left: 3.5%
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  width: 114px;
+  width: 110px;
   margin: 0 0;
 }
 
@@ -611,7 +612,7 @@ padding-left: 3.5%
   line-height: inherit; 
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 52px;
   outline: none;
   text-transform: inherit;
   width: 458px;
@@ -674,7 +675,7 @@ padding-left: 3.5%
 .filters-column h2, .filters-price h2 {
   margin: 0;
   padding: 0;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
   font-size: 16px;
   color: white;
 }
@@ -729,7 +730,7 @@ padding-left: 3.5%
   display: inline-block;
   width: 47%;
   vertical-align: middle;
-  text-indent: 12px;
+  text-indent: 27px;
 }
 
 .price-frame-input-line {
@@ -891,7 +892,7 @@ padding-left: 3.5%
 .sorting-controls .arrow {
   color: #cccccc;
   text-decoration: none;
-  padding: 5px;
+  padding: 4px;
 }
 
 .sorting-controls .arrow:hover {
@@ -934,7 +935,7 @@ figure {
 .item-description > a {
   display: block;
   margin: 0;
-  margin-top: -6px;
+  margin-top: -5px;
   padding: 0;
   font-weight: bold;
   font-size: 21px;
@@ -987,7 +988,7 @@ figure {
 }
 
 .rating-stars {
-  margin-right: -4px;
+  margin-right: -2px;
   font-size: 0;
 }
 
