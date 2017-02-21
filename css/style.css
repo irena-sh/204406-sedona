@@ -87,13 +87,13 @@ h2 .item-title {
   background-color: white;
   margin-left: auto; 
   margin-right: auto;
-  height: 59px;
+  height: 55px;
 }
 
 .main-nav {
   margin: 0;
   padding: 0;
-  padding-top: 17px;
+  padding-top: 15px;
   padding-right: 6%;
   padding-bottom: 19px;
   padding-left: 6%;
@@ -663,7 +663,7 @@ padding-left: 3.5%
 .filters-column h2, .filters-price h2 {
   margin: 0;
   padding: 0;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
   font-size: 16px;
   color: white;
 }
@@ -701,7 +701,7 @@ padding-left: 3.5%
 }
 
 .filter-checkbox {
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .price-frame {
@@ -718,6 +718,7 @@ padding-left: 3.5%
   display: inline-block;
   width: 47%;
   vertical-align: middle;
+  text-indent: 12px;
   
 }
 
@@ -753,7 +754,7 @@ padding-left: 3.5%
 }
 
 .scale .bar {
-  width: 73%;
+  width: 80%;
   height: 2px;
   background: white;
 }
@@ -771,7 +772,7 @@ padding-left: 3.5%
 }
 
 .max-toggle {
-  left: 73%;
+  left: 80%;
 }
 
 .toggle:hover {
@@ -809,13 +810,13 @@ padding-left: 3.5%
 
 .results-title {
   float: left;
-  margin-right: 32px;
+  margin-right: 25px;
   width: 135px;
+  padding-top: 5px;
 }
 
 .list {
   float: left;
-  margin-right: 32px;
 }
 
 .list ul {
@@ -824,11 +825,12 @@ padding-left: 3.5%
   padding-top: 8px;
   list-style: none;
   font-size: 0;
+  padding-left: 5px;
 }
 
 .list li {
   display: inline-block;
-  margin-right: 32px;
+  margin-right: 28px;
   font-size: 12px;
   vertical-align: top;
 }
@@ -853,9 +855,9 @@ padding-left: 3.5%
 .sorting-controls {
   float: right;
   position: relative;
-  top: 3px;
   margin-right: -8px;
   text-align: right;
+  bottom: 3px;
 }
 
 .ascending {
@@ -879,6 +881,7 @@ padding-left: 3.5%
 .sorting-controls .arrow {
   color: #cccccc;
   text-decoration: none;
+  padding: 5px;
 }
 
 .sorting-controls .arrow:hover {
@@ -966,8 +969,7 @@ figure {
 
 .item-rating .rating-text {
   margin: 0;
-  margin-top: 43px;
-  margin-right: 2px;
+  margin-top: 36px;
   padding: 0;
   padding: 5px 16px;
   font-size: 14px;
@@ -976,9 +978,16 @@ figure {
 }
 
 .rating-stars {
-  margin-top: -6px;
   margin-right: -4px;
   font-size: 0;
+}
+
+.desert {
+  padding-top: 29px;
+}
+
+.villas {
+  padding-top: 30px;
 }
 
 /* Футер */
