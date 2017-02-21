@@ -87,7 +87,7 @@ h2 .item-title {
   background-color: white;
   margin-left: auto; 
   margin-right: auto;
-  height: 55px;
+  height: 56px;
 }
 
 .main-nav {
@@ -111,7 +111,15 @@ h2 .item-title {
 
 .main-nav li:nth-child(2) {
   margin-right: 20%;
+  padding-left: 3%;
+  box-sizing: border-box;
 }
+
+.main-nav li:nth-child(3) {
+  box-sizing: border-box;
+  padding-right: 3%;
+}
+
 
 .main-nav li:nth-child(3), .main-nav li:nth-child(4) {
   text-align: right;
